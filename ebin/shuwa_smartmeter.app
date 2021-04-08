@@ -1,0 +1,13 @@
+{application,shuwa_smartmeter,
+             [{description,[25968,34521,26234,33021,30005,34920]},
+              {vsn,"4.0.0"},
+              {registered,[]},
+              {mod,{shuwa_smartmeter_app,[]}},
+              {applications,[kernel,stdlib]},
+              {env,[]},
+              {modules,[dlt645_decoder,dlt645_proctol,shuwa_smartmeter,
+                        shuwa_smartmeter_app,shuwa_smartmeter_handler,
+                        shuwa_smartmeter_sup]},
+              {maintainers,[]},
+              {licenses,["Apache 2.0"]},
+              {links,[]}]}.
