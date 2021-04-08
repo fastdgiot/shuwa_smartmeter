@@ -154,3 +154,5 @@
 }).
 
 -define(TOPIC(AppEui), <<"ni/tx/", AppEui/binary>>).
+
+-define(DLT645, <<"DLT645">>).
