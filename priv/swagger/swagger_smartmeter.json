@@ -8,5 +8,41 @@
   "definitions": {
   },
   "paths": {
+    "/meter": {
+      "get": {
+        "summary": "读取电表电量",
+        "description": "读取电表电量",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "devaddr",
+            "required": true,
+            "description": "电表地址",
+            "type": "string",
+            "default": "041600000741"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Returns operation status"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "500": {
+            "description": "Server Internal error"
+          }
+        },
+        "tags": [
+          "METER"
+        ]
+      }
+    }
   }
 }
